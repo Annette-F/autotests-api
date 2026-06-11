@@ -25,7 +25,7 @@ class PublicUsersClient(APIClient):
 
 
 # Добавляем builder для AuthenticationClient
-def get_public_user_client() -> PublicUsersClient:
+def get_public_users_client() -> PublicUsersClient:
     '''
     Функция создаёт экземпляр PublicUsersClient с уже настроенным HTTP-клиентом.
 
