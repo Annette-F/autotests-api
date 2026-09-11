@@ -14,7 +14,7 @@ create_user_request = CreateUserRequestSchema(
     first_name='string',
     middle_name='string'
 )
-create_user_response = public_users_client.create_user_api(create_user_request)
+create_user_response = public_users_client.create_user(create_user_request)
 
 authentication_user = AuthenticationUserSchema(
     email=create_user_request.email,
